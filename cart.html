@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Shopping Cart - In.Cube8r</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rell="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <div class="header-center">
+        <div>In.Cube8r</div>
+      </div>
+      <div class="header-right">
+        <i class="fas fa-lock"></i>
+        <span class="cart-count">2</span>
+      </div>
+    </header>
+    <main class="main">
+      <h1>My Cart</h1>
+      <section class="cart-section">
+        <div class="cart-items">
+          <div class="cart-item">
+            <img
+              src="Images/sterling-silver-textured-bangle.jpg"
+              alt="Sterling Silver Textured Bangle"
+            />
+            <div class="cart-item-details">
+              <h3>Sterling Silver Textured Bangle</h3>
+              <p>$90</p>
+              <div class="quantity-selector">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="Images/silver-roman-coin-stretch-bracelet.jpg"
+              alt="Silver Roman Coin Stretch Bracelet"
+            />
+            <div class="cart-item-details">
+              <h3>Silver Roman Coin Stretch Bracelet</h3>
+              <p>$60</p>
+              <div class="quantity-selector">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <h2>Cart Summary</h2>
+          <div class="cart-summary-details">
+            <p>Subtotal: $150</p>
+            <p>Standard Flat Rate Shipping Fee: $9.80</p>
+            <p>Total: $159.80</p>
+          </div>
+          <a href="payment.html" class="checkout-button">CHECKOUT</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>© 2024 In.Cube8r</div>
+      <div>Privacy Policy</div>
+      <div>Terms of Service</div>
+    </footer>
+    <script src="cart.js"></script>
+  </body>
+</html>
