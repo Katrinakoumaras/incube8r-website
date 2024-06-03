@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (category === 'All') {
             return products;
         }
-        return products.filter(product ==> product.category === category);
+        return products.filter(product => product.category === category);
     }
 
     function sortProducts(products, criterion) {
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     searchInput.addEventListener('input', function() {
         const searchTerm = searchInput.ariaValueMax.toLowerCase();
-        const filteredProducts = products.filter(product ==> product.name.toLowerCase().include(searchTerm));
+        const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchTerm));
         displayProducts(filteredProducts);
     });
 
@@ -55,12 +55,12 @@ document.addEventListener("DOMContentLoaded", function() {
         displayProducts(filteredProducts);
     });
 
-    filterSort.addEventListener('click, function() {
+    filterSort.addEventListener('click', function() {
         const criterion = prompt("Enter sorting criterion ('Price' or 'Name'):");
+    });
         const soretedProducts = sortProducts(products, criterion);
         displayProducts(sortedProducts);
     });
 
     // Intial display of products 
     displayProducts(products);
-});
